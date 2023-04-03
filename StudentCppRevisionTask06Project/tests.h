@@ -37,7 +37,6 @@ void testingTask01() {
 		for (int y = MIN_NUMBER; y <= MAX_NUMBER; y += 2)
 		{			
 			if (!task01(x, y)) {
-				cout << "x = " << x << ", y = " << y << endl;
 				result = false;
 				goto lable;
 			}
@@ -84,7 +83,7 @@ lable:
 
 void testingTask02() {
 	bool result = basic_check(task02);
-
+		
 	for (int x = MIN_NUMBER; x <= MAX_NUMBER; x++)
 	{
 		for (int y = MIN_NUMBER; y < MAX_NUMBER; y++)
@@ -100,10 +99,10 @@ void testingTask02() {
 	{
 		for (int y = MIN_NUMBER; y < MAX_NUMBER; y++)
 		{
-			int d1 = rand() % MAX_NUMBER;
-			int d2 = rand() % MAX_NUMBER;
+			int d1 = rand() % MAX_NUMBER + MIN_NUMBER;
+			int d2 = rand() % MAX_NUMBER + MIN_NUMBER;
 
-			if (!task02(x, y, x + d1, y + d2)) {
+			if (task02(x, y, x + d1, y + d2)) {
 				result = false;
 				goto lable;
 			}
