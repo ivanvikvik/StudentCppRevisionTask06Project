@@ -144,111 +144,31 @@ void testingTask03() {
 
 void testingTask04() {
 	bool result = basic_check(task04)
-		&& !task04(5, 3, 5, 5)
-		&& !task04(5, 3, 3, 3)
-		&& !task04(5, 3, 5, 3)
-		&& !task04(5, 3, 3, 5)
-		&& !task04(5, 3, 7, 1)
-		&& !task04(5, 3, 1, 7)
-		&& !task04(5, 3, 3, 1)
-		&& !task04(5, 3, 7, 5)
-		&& !task04(5, 3, 7, 3)
-		&& task04(5, 3, 5, 4)
-		&& task04(5, 3, 5, 2)
-		&& task04(5, 3, 6, 3)
-		&& task04(5, 3, 4, 3)
-		&& task04(5, 3, 4, 2)
-		&& task04(5, 3, 4, 4)
-		&& task04(5, 3, 6, 2)
-		&& task04(5, 3, 6, 4);
-
+		&& !task04(4, 4, 5, 5)
+		&& !task04(4, 4, 3, 3)
+		&& !task04(4, 4, 3, 5)
+		&& !task04(4, 4, 5, 3)
+		&& !task04(4, 4, 7, 1)
+		&& !task04(4, 4, 1, 7)
+		&& !task04(4, 4, 1, 1)
+		&& !task04(4, 4, 7, 7)
+		&& !task04(4, 4, 4, 4)
+		&& task04(4, 4, 4, 1)
+		&& task04(4, 4, 4, 2)
+		&& task04(4, 4, 4, 3)
+		&& task04(4, 4, 4, 5)
+		&& task04(4, 4, 4, 6)
+		&& task04(4, 4, 4, 7)
+		&& task04(4, 4, 4, 8)
+		&& task04(4, 4, 1, 4)
+		&& task04(4, 4, 2, 4)
+		&& task04(4, 4, 3, 4)
+		&& task04(4, 4, 5, 4)
+		&& task04(4, 4, 6, 4)
+		&& task04(4, 4, 7, 4)
+		&& task04(4, 4, 8, 4);
 
 	cout << "Task 04 " << (result ? RIGHT : WRONG) << endl;
 }
 
-void testingTask05() {
-	bool result = basic_check(task05)
-		&& !task05(6, 4, 5, 4)
-		&& !task05(6, 4, 6, 4)
-		&& !task05(6, 4, 7, 4)
-		&& !task05(6, 4, 6, 3)
-		&& !task05(6, 4, 6, 5)
-		&& task05(6, 4, 8, 2)
-		&& task05(6, 4, 7, 3)
-		&& task05(6, 4, 4, 6)
-		&& task05(6, 4, 3, 7)
-		&& task05(6, 4, 2, 8)
-		&& task05(6, 4, 3, 1)
-		&& task05(6, 4, 4, 2)
-		&& task05(6, 4, 5, 3)
-		&& task05(6, 4, 7, 5)
-		&& task05(6, 4, 8, 6)
-		&& task05(6, 4, 5, 5);
-
-	cout << "Task 05 " << (result ? RIGHT : WRONG) << endl;
-}
-
-void testingTask06() {
-
-	bool result = basic_check(task06)
-		&& !task06(3, 6, 5, 3)
-		&& !task06(3, 6, 3, 6)
-		&& !task06(3, 6, 7, 5)
-		&& !task06(3, 6, 8, 6)
-		&& !task06(3, 6, 5, 4)
-		&& !task06(3, 6, 7, 4)
-		&& !task06(3, 6, 6, 3)
-		&& !task06(3, 6, 6, 5)
-		&& task06(3, 6, 1, 5)
-		&& task06(3, 6, 2, 4)
-		&& task06(3, 6, 4, 4)
-		&& task06(3, 6, 5, 5)
-		&& task06(3, 6, 5, 7)
-		&& task06(3, 6, 4, 8)
-		&& task06(3, 6, 2, 8)
-		&& task06(3, 6, 1, 7);
-
-	cout << "Task 06 " << (result ? RIGHT : WRONG) << endl;
-}
-
-void testingTaskX() {
-	bool result = basic_check(taskX)
-		&& !taskX(6, 4, 5, 2)
-		&& !taskX(6, 4, 6, 4)
-		&& !taskX(6, 4, 2, 6)
-		&& !taskX(6, 4, 1, 1)
-		&& !taskX(6, 4, 8, 8)
-		&& !taskX(6, 4, 3, 6)
-		&& !taskX(6, 4, 4, 5)
-		&& !taskX(6, 4, 5, 7)
-		&& !taskX(6, 4, 8, 3)
-		&& taskX(6, 4, 8, 2)
-		&& taskX(6, 4, 7, 3)
-		&& taskX(6, 4, 5, 5)
-		&& taskX(6, 4, 4, 6)
-		&& taskX(6, 4, 3, 7)
-		&& taskX(6, 4, 2, 8)
-		&& taskX(6, 4, 3, 1)
-		&& taskX(6, 4, 4, 2)
-		&& taskX(6, 4, 5, 3)
-		&& taskX(6, 4, 7, 5)
-		&& taskX(6, 4, 8, 6)
-		&& taskX(6, 4, 5, 4)
-		&& taskX(6, 4, 4, 4)
-		&& taskX(6, 4, 3, 4)
-		&& taskX(6, 4, 2, 4)
-		&& taskX(6, 4, 1, 4)
-		&& taskX(6, 4, 7, 4)
-		&& taskX(6, 4, 8, 4)
-		&& taskX(6, 4, 6, 3)
-		&& taskX(6, 4, 6, 2)
-		&& taskX(6, 4, 6, 1)
-		&& taskX(6, 4, 6, 6)
-		&& taskX(6, 4, 6, 7)
-		&& taskX(6, 4, 6, 8)
-		&& taskX(6, 4, 6, 5);
-
-
-	cout << "Task X  " << (result ? RIGHT : WRONG) << endl;
-}
 
