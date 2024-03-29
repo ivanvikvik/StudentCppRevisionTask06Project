@@ -21,7 +21,8 @@ bool basic_check(CHESS_FUNCTION function) {
 		&& !function(9, 5, 5, 5)
 		&& !function(5, 9, 5, 5)
 		&& !function(5, 5, 9, 5)
-		&& !function(5, 5, 5, 9);
+		&& !function(5, 5, 5, 9)
+		&& !function(8, 8, 8, 8);
 }
 
 void testingTask01() {
@@ -115,29 +116,14 @@ lable:
 
 void testingTask03() {
 	bool result = basic_check(task03)
-		&& !task03(4, 4, 5, 5)
-		&& !task03(4, 4, 3, 3)
-		&& !task03(4, 4, 3, 5)
-		&& !task03(4, 4, 5, 3)
-		&& !task03(4, 4, 7, 1)
-		&& !task03(4, 4, 1, 7)
-		&& !task03(4, 4, 1, 1)
-		&& !task03(4, 4, 7, 7)
-		&& !task03(4, 4, 4, 4)
-		&& task03(4, 4, 4, 1)
-		&& task03(4, 4, 4, 2)
-		&& task03(4, 4, 4, 3)
-		&& task03(4, 4, 4, 5)
-		&& task03(4, 4, 4, 6)
-		&& task03(4, 4, 4, 7)
-		&& task03(4, 4, 4, 8)
-		&& task03(4, 4, 1, 4)
-		&& task03(4, 4, 2, 4)
-		&& task03(4, 4, 3, 4)
-		&& task03(4, 4, 5, 4)
-		&& task03(4, 4, 6, 4)
-		&& task03(4, 4, 7, 4)
-		&& task03(4, 4, 8, 4);
+		&& !task03(4, 1, 4, 2)
+		&& !task03(4, 2, 4, 3)
+		&& !task03(-1, 7, -1, 8)
+		&& !task03(0, 7, 0, 8)
+		&& !task03(9, 7, 9, 8)
+		&& task03(4, 7, 4, 8)
+		&& task03(1, 7, 1, 8)
+		&& task03(8, 7, 8, 8);
 
 	cout << "Task 03 " << (result ? RIGHT : WRONG) << endl;
 }
@@ -152,7 +138,6 @@ void testingTask04() {
 		&& !task04(4, 4, 1, 7)
 		&& !task04(4, 4, 1, 1)
 		&& !task04(4, 4, 7, 7)
-		&& !task04(4, 4, 4, 4)
 		&& task04(4, 4, 4, 1)
 		&& task04(4, 4, 4, 2)
 		&& task04(4, 4, 4, 3)

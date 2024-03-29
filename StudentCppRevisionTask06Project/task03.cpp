@@ -42,7 +42,6 @@
 *	[output 4]: true
 */
 
-bool task03(int x1, int y1, int x2, int y2) {
-	
+bool task03(int x1, int y1, int x2, int y2) {	
 	return false;
 }
