@@ -31,13 +31,13 @@
 *	[ input 1]: 4 4 5 5
 *	[output 1]: false
 *
-*	[ input 2]: 4 1 4 2
+*	[ input 2]: 4 3 4 8
 *	[output 2]: false
 *
 *	[ input 3]: 0 4 0 5
 *	[output 3]: false
 *
-*	[ input 4]: 4 4 4 5
+*	[ input 4]: 4 7 4 8
 *	[output 4]: true
 */
 
